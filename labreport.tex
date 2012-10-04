@@ -1,0 +1,130 @@
+\documentclass{atlasnote} 
+
+
+%\documentclass[usetikz]{atlasnote} % the 'usetikz' option loads tikz.sty in the proper place, 
+                                   % avoiding conflicts with graphicx.sty.
+                                   % Don't know what tikz.st is? Just ignore this line! :-)
+
+%\documentclass[coverpage]{atlasnote} % the 'coverpage' option loads the ATLAS Cover Page package 
+                                      % ans makes sure that the cover page is generated before the
+                                      % note title page. Make sure that the latest version of
+                                      % of 'atlascover.sty. is installed on your system!
+
+%\usepackage{graphicx} % This is already loaded by the atlasnote class
+                       % Just use it to include your plots!
+
+
+\usepackage[section] {placeins}% to prevent "too many unprocessed floats" error. Lily.
+
+
+% default location 
+\graphicspath{{./figures/}}
+
+\usepackage{amsmath}
+\usepackage{atlasphysics}
+\usepackage{url}
+\usepackage{subfigure}
+\usepackage{epstopdf}
+\usepackage{multirow}
+\usepackage{xspace}
+\usepackage{atlasphysics}
+\usepackage{rotating} 
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{url}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+% define some useful shortcuts
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%           Title page             % 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\skipbeforetitle{10pt}
+
+%\atlasnote{1.0} 
+
+\title{The M\"ossbauer Effect}
+
+\input{authors.tex}
+
+% Date: if not given, uses current date
+\date{\today}
+
+% Draft version: if given, adds draft version on front page, a
+% 'DRAFT' box on top of each other page, and line numbers to easy
+% commenting. Comment or remove in final version.
+% \draftversion{1.0}
+
+% Journal: adds a 
+%\journal{Phys. Lett. B} 
+
+% Abstract
+\abstracttext{abstract goes here...}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%            Content               % 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%% Some variable definitions
+\input{definitions}
+
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+\label{sec:intro}
+\input{sec_intro}
+
+\section{Theory}
+\label{sec:theory}
+\input{sec_theory}
+
+\section{Experimental setup and data taking}
+\label{sec:daq}
+\input{sec_daq}
+
+\section{Analysis}
+\label{sec:analysis}
+\input{sec_analysis}
+
+\section{Results}
+\label{sec:results}
+\input{sec_results}
+
+\section{Conclusions}
+\label{sec:conclusion}
+\input{sec_conclusion}
+
+\section*{Acknowledgements}
+We thank everybody!
+
+\bibliographystyle{atlasnote}
+\bibliography{biblio}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Appendix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\appendix
+%\label{appendix}
+%\setcounter{page}{1}
+%\section{Appendix}
+
+
+\end{document}
+
+
