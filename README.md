@@ -1,7 +1,8 @@
 Mossbauer Effect Lab Report
 ===========================
 
-Contains the basic tex templates for the PHY417s (Advanced Lab) lab reports.
+Lab report on the Mossbauer effect for PHY417S.
 
 To download just execute the following:
 git clone https://github.com/joshloyal/AdvancedLabReport.git
+git checkout MossbauerEffect
