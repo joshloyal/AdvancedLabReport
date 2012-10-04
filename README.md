@@ -1,4 +1,4 @@
 AdvancedLabReport
 =================
 
-Contains the basic tex template for the lab reports for PHY417s (Advanced Lab)
+Contains the basic tex templates for PHY417s (Advanced Lab) lab reports.
